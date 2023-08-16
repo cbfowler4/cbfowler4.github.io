@@ -44,3 +44,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Folder Structure (components)
+common: This folder contains generic and reusable components that are used throughout the application. Examples include basic UI elements like buttons, inputs, and other common UI components.
+
+layout: Here, you can place components that define the overall layout of your application, such as the header, footer, sidebar, or navigation bar.
+
+pages: This folder is for components that represent individual pages or routes of your application. Each page component can be associated with a specific route and can be composed of other common or shared components.
+
+shared: The "shared" folder houses components that are shared across multiple pages or sections of the application, such as modals, carousels, or widgets.
+
+... (Other folders): Depending on your project's complexity, you may create additional folders to group components based on their functionality or feature sets. For example, if you have a complex feature that requires multiple components to work together, you could create a separate folder for that feature.

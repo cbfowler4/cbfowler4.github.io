@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './App';
-// import { ThemeProvider } from 'styled-components';
-// import THEME from './theme';
-// import GlobalStyles from './theme/Global';
+import { ThemeProvider } from 'styled-components';
+import THEME from './theme';
+import GlobalStyles from './theme/globalStyles';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    {/* <ThemeProvider theme={THEME}>
-      <GlobalStyles /> */}
+    <ThemeProvider theme={THEME}>
+      <GlobalStyles />
       <App />
-    {/* </ThemeProvider> */}
+    </ThemeProvider>
   </React.StrictMode>
 );
