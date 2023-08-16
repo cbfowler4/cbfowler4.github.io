@@ -12,6 +12,11 @@ body {
   font-family: ${(props) => props.theme.typography.family};
   font-weight: ${(props) => props.theme.typography.weight};
   color: ${(props) => props.theme.colors.primary};
+  padding: 0 96px;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 * {
@@ -21,6 +26,17 @@ body {
 
 h2 {
   font-weight: ${({ theme }) => theme.typography.subHeaderWeight};
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 `
 

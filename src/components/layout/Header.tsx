@@ -1,19 +1,38 @@
 import React from 'react'
 
-import { StyledHeader, HeaderContent, GlitchH1 } from './styled/Header.styled'
+import {
+  StyledHeader,
+  HeaderContent,
+  GlitchH1,
+  Navigation,
+  ListItem,
+} from './styled/Header.styled'
+import Content from '../../theme/content'
 
-const NAME = 'Bryan Fowler'
 const Header = () => {
   return (
     <StyledHeader>
       <HeaderContent>
-        <GlitchH1 data-text={NAME}>{NAME}</GlitchH1>
-        <h2>Full Stack Engineer</h2>
-        <p>
-          I build scalable & secure full stack apps. I specialize in taking
-          products from 0 to 1.
-        </p>
+        <GlitchH1 data-text={Content.header.title}>
+          {Content.header.title}
+        </GlitchH1>
+        <h2>{Content.header.subheader}</h2>
+        <p>{Content.header.paragraph}</p>
       </HeaderContent>
+      <Navigation>
+        <ListItem>
+          <a href='#about'>About</a>
+        </ListItem>
+        <ListItem>
+          <a href='#experience'>Experience</a>
+        </ListItem>
+        <ListItem>
+          <a href='#projects'>Projects</a>
+        </ListItem>
+        <ListItem>
+          <a href='#contact'>Contact</a>
+        </ListItem>
+      </Navigation>
     </StyledHeader>
   )
 }

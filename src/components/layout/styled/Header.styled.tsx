@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledHeader = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   padding: ${({ theme }) => theme.layout.majorPadding};
 `
 
@@ -44,5 +44,20 @@ export const GlitchH1 = styled.h1`
     width: 100%;
     height: 100%;
     text-shadow: 3px 0 #5ce1e6;
+  }
+`
+
+export const Navigation = styled.ul`
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+`
+
+export const ListItem = styled.li`
+  font-weight: ${(props) => props.theme.typography.subHeaderWeight};
+  margin: 0.5rem 0;
+
+  &:hover {
+    opacity: 0.7;
   }
 `
