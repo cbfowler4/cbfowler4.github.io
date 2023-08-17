@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const RootContainer = styled.div`
   display: flex;
 
-  div {
+  > div {
     flex: 1;
   }
 `

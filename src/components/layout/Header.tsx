@@ -6,6 +6,7 @@ import {
   GlitchH1,
   Navigation,
   ListItem,
+  ListBullet,
 } from './styled/Header.styled'
 import Content from '../../theme/content'
 
@@ -21,15 +22,19 @@ const Header = () => {
       </HeaderContent>
       <Navigation>
         <ListItem>
+          <ListBullet />
           <a href='#about'>About</a>
         </ListItem>
         <ListItem>
+          <ListBullet />
           <a href='#experience'>Experience</a>
         </ListItem>
         <ListItem>
+          <ListBullet />
           <a href='#projects'>Projects</a>
         </ListItem>
         <ListItem>
+          <ListBullet />
           <a href='#contact'>Contact</a>
         </ListItem>
       </Navigation>

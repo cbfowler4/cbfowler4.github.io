@@ -18,13 +18,14 @@ export const HeaderContent = styled.div`
   }
   h2 {
     margin: 12px 0;
+    font-size: ${({ theme }) => theme.typography.subHeaderSize};
   }
 `
 
 export const GlitchH1 = styled.h1`
   position: relative;
-  font-size: 3rem;
-  letter-spacing: 0.35rem;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
 
   &::before {
     content: attr(data-text);
@@ -33,7 +34,7 @@ export const GlitchH1 = styled.h1`
     left: 0;
     width: 100%;
     height: 100%;
-    text-shadow: -3px 0 #cb6ce6;
+    text-shadow: -4px 0 #cb6ce6;
   }
 
   &::after {
@@ -43,7 +44,7 @@ export const GlitchH1 = styled.h1`
     left: 0;
     width: 100%;
     height: 100%;
-    text-shadow: 3px 0 #5ce1e6;
+    text-shadow: 4px 0 #5ce1e6;
   }
 `
 
@@ -55,9 +56,33 @@ export const Navigation = styled.ul`
 
 export const ListItem = styled.li`
   font-weight: ${(props) => props.theme.typography.subHeaderWeight};
-  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 
   &:hover {
-    opacity: 0.7;
+    > div {
+      animation-duration: 0.25s;
+      animation-name: slidein;
+      width: 80px;
+    }
+  }
+`
+
+export const ListBullet = styled.div`
+  border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+
+  @keyframes slidein {
+    from {
+      width: 30px;
+    }
+
+    to {
+      width: 80px;
+    }
   }
 `

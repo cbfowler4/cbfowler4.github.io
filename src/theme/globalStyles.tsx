@@ -22,6 +22,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  font-size: ${({ theme }) => theme.typography.size}
 }
 
 h2 {
